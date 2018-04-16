@@ -31,7 +31,7 @@ public class MyEditText extends EditText {
     private void init() {
         if (!isInEditMode()) {
             Typeface tf = Typeface.createFromAsset(getContext().getAssets(),
-                    "SF_SAN_FRANCISCO_UI_DISPLAY_REGULAR");
+                    "font/SF_SAN_FRANCISCO_UI_DISPLAY_BOLD_594B9606EE182.ttf");
             setTypeface(tf);
         }
     }

@@ -28,8 +28,10 @@ public class MyButton extends Button {
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(),
-                    "SF_SAN_FRANCISCO_UI_DISPLAY_REGULAR");
+            //Typeface tf = Typeface.createFromAsset(getContext().getAssets(),
+              //      "asset/SF_SAN_FRANCISCO_UI_DISPLAY_BOLD_594B9606EE182.ttf");
+
+            Typeface tf=Typeface.createFromAsset(getContext().getAssets(), "font/SF_SAN_FRANCISCO_UI_DISPLAY_BOLD_594B9606EE182.ttf");;
             setTypeface(tf);
         }
     }
