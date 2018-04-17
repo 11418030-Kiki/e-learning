@@ -11,7 +11,7 @@
             <!-- CONTENT LAYER -->
             <item>
                 <shape>
-                    <solid android:color="#ffffff" />
+                    <solid android:color="@color/colorPrimary" />
                     <corners android:radius="1dp" />
                 </shape>
             </item>

@@ -29,7 +29,7 @@ public class MyTextView extends TextView {
     private void init() {
         if (!isInEditMode()) {
             Typeface tf = Typeface.createFromAsset(getContext().getAssets(),
-                    "font/SF_SAN_FRANCISCO_UI_DISPLAY_BOLD_594B9606EE182.ttf");
+                    "font/SF_SAN_FRANCISCO_UI_DISPLAY_REGULAR_594B948E3C12A.ttf");
             setTypeface(tf);
         }
     }

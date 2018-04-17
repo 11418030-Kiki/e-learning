@@ -19,7 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.LoginActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.password.ResetPasswordActivity"/>
+        <activity android:name=".activity.password.ForgotPasswordActivity" />
+        <activity android:name=".activity.password.CreateProfileActivity"/>
+        <activity android:name=".activity.password.OTPActivity"/>
     </application>
 
 </manifest>

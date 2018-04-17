@@ -1,11 +1,14 @@
 package com.e_learning.activity;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.e_learning.R;
+
 import com.e_learning.adapter.TabAdapter;
 import com.e_learning.fragment.LoginFragment;
 import com.e_learning.fragment.SignUpFragment;
@@ -29,5 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         viewPager.setAdapter(tabAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }
+
+
 
 }

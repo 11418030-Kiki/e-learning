@@ -5,25 +5,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".fragment.LoginFragment">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
 
         <Button
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/fb"
+            android:text="Login with Facebook"
+            android:background="@color/fbcolor"
             android:id="@+id/fb_login"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/facebookbutton" />
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp" />
 
         <Button
-            android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/googlep"
+            android:text="Login with Google+"
+            android:padding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
             android:layout_below="@id/fb_login"
             android:layout_marginTop="20dp"
-            android:background="@drawable/googlesiginbutton" />
+            android:background="#e04b34" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -52,7 +68,11 @@
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
             android:hint="Username"
-            android:padding="10dp" />
+            android:textColorHint="@color/colorAccent"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            />
 
         <com.e_learning.custom_view.MyEditText
             android:layout_width="match_parent"
@@ -60,6 +80,10 @@
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
             android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorAccent"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
             android:padding="10dp" />
 
         <RelativeLayout
@@ -77,25 +101,28 @@
                 android:textSize="15sp" />
 
             <com.e_learning.custom_view.MyButton
+                android:id="@+id/btn_forgot_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:background="@android:color/transparent"
-                android:paddingRight="10dp"
+                android:paddingRight="20dp"
                 android:text="Forgot Password?"
                 android:textAllCaps="false" />
         </RelativeLayout>
 
         <com.e_learning.custom_view.MyButton
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_margin="25dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/shadow"
             android:text="Login"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite" />
 
     </LinearLayout>
 
-
+ </LinearLayout>
+    </ScrollView>
 </LinearLayout>
